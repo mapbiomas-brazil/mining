@@ -11,7 +11,7 @@
 ## About
 This repository provides the steps to detect mining areas using Landsat Top of Atmosphere (TOA) mosaics.
 
-The classification process focuses on identifying mining areas using Landsat TOA mosaics. The process involves generating annual cloud-free mosaics using Google Earth Engine (GEE) and applying a U-Net deep learning model for classification.
+The detection process focuses on identifying mining areas using Landsat TOA mosaics. The process involves generating annual cloud-free mosaics using Google Earth Engine (GEE) and applying a U-Net deep learning model for segmentation........
 
 For more information about the methodology, please see the [Mining Algorithm Theoretical Basis Document](https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2024/08/Mining-Appendix-ATBD-Collection-9.docx.pdf)
 
