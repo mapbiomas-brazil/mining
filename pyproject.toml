@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mapbiomas-mining"
+version = "2.0.0"
+description = "U-Net based mining mapping for MapBiomas (training, prediction and GEE helpers)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Solved - Solutions in Geoinformation" }]
+dependencies = [
+    "numpy",
+    "rasterio",
+    "patchify",
+    "tensorflow>=2.16",
+]
+
+[project.optional-dependencies]
+gee = ["earthengine-api"]
+viz = ["matplotlib", "folium"]
+dev = ["pytest"]
+
+[project.scripts]
+mapbiomas-mining = "mapbiomas_mining.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mapbiomas_mining*"]
